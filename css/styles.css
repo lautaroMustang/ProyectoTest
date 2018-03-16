@@ -90,18 +90,19 @@ a{
     background-size: cover;
     height: 85vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-  }
+		flex-direction: column;
+    align-items:center;
+		justify-content: center;
+	  }
   .comprarAlquilar{
+		width: 100vw;
     height: 10vh;
+		display: flex;
+		justify-content: space-around;
   }
   /* Selector tipo de busqueda flecha abajo */
   .filtro {
-    float:left;
-    display:flex;
-    flex-direction: column;
+		flex-direction: column;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -114,7 +115,7 @@ a{
     margin-right: 10vw;
     font-size: 2em;
     text-shadow: 2px 2px 5px #3e5b5b;
-    line-height: 1vh;
+
   }
   /* Hide the browser's default radio button */
   .filtro input {
@@ -156,39 +157,43 @@ a{
       text-align: center;
       text-shadow: 2px 2px 5px #3e5b5b;
   }
+	.keyWoldsSearch{
+		width: 100vw;
+		display: flex;
+	}
   .keyWoldsSearch input{
-    width: 90%;
-    float: left;
+    flex-basis: 90%;
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    height: 3em;
-    padding: 2%;
+    padding: 1%;
     box-shadow: 2px 2px 5px #3e5b5b;
     font-weight: bold;
     color:rgb(241,196,15);
+		margin-left: 10vw;
   }
   .keyWoldsSearch button{
-    float: right;
-    height: 3em;
-    width: 10%;
-    border: none;
+		flex-basis: 10%;
+		border: none;
     background-color: white;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     text-shadow:0px 0px 13px rgb(200,45,29);
     box-shadow: 2px 2px 5px #3e5b5b;
     color:rgb(241,196,15);
+		margin-right: 10vw;
   }
-  .search a{
-    display: block;
+	.buscAvanz{
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+	}
+  .buscAvanz a{
     color: white;
-    width: 20em;
-    font-family: verdana;
+		font-family: verdana;
     line-height: 5vw;
     text-align: center;
     font-size: 1.5em;
     text-shadow: 2px 2px 5px #3e5b5b;
-    margin-top: 3vw;
-  }
+	}
 }
