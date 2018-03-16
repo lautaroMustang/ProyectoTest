@@ -2,10 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Avecino</title>
   </head>
   <body>
-
+    <div class="container">
+      <header>
+        <h3><a href="#"><img src="./images/logo.png" alt="Logo">  </a></h3>
+        <nav>
+          <ul>
+            <li><a href="ingreso.html">INGRESAR</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="search">
+        <form class="formSearch" action="search.php" method="get">
+          <div class="comprarAlquilar">
+            <label class="filtro">COMPRAR
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="filtro">ALQUILAR
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="keyWoldsSearch">
+            <input type="search" name="palabrasClave" value="PALABRA CLAVE">
+            <button type="submit" name="enviarConsulta">🔍</button>
+          </div>
+            <a href="#">BUSQUEDA AVANZADA</a>            
+        </form>
+      </div>
+    </div>
   </body>
 </html>

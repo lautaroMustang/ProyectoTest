@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width:60px) {
+  header{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(200,45,29); ///* TODO: cambiar */
+  }
+  header img{
+    width: 10vw;
+    margin-left: 6vw;
+  }
+  header nav ul li{
+    float: left;
+    background-color:rgb(241,196,15) ;
+    margin-right: 6vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #3e5b5b;
+  }
+  header nav ul li a{
+    display: block;
+    font-size:1.6em;
+    font-family: verdana;
+    color: white;
+    width: 6.5em;
+    text-align: center;
+    line-height: 2em;
+  }
+  .search{
+    background-image:url(../images/cityBackground.jpg);
+    display: block;
+    background-color: #cccccc;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .comprarAlquilar{
+    height: 10vh;
+  }
+  /* Selector tipo de busqueda flecha abajo */
+  .filtro {
+    float:left;
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    font-family: verdana;
+    font-weight: bold;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px #3e5b5b;
+    line-height: 1vh;
+  }
+  /* Hide the browser's default radio button */
+  .filtro input {
+      opacity: 0;
+      cursor: pointer;
+      display: none;
+  }
+  /* Create a custom radio button */
+  .checkmark {
+  	  /*height: 2vw;*/
+      /*width: 4vw;*/
+      /*border-radius: 50%;*/
+  }
+  /* On mouse-over, add a grey background color */
+  .filtro:hover input ~ .checkmark {
+      background-color: #ccc;
+  }
+  /* When the radio button is checked, add a blue background */
+  .filtro input:checked ~ .checkmark {
+      /*background-color: #2196F3;*/
+  }
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+     /*content: "";*/
+     /* position: absolute;*/
+      display: none;
+  }
+  /* Show the indicator (dot/circle) when checked */
+  .filtro input:checked ~ .checkmark:after {
+      display: block;
+  }
+  /* Style the indicator (dot/circle) */
+  .filtro .checkmark:after {
+      content:"⌄";
+      color:rgb(241,196,15) ;
+  	  font-weight:bold;
+      font-size:1.5em;
+      line-height: 0;
+      text-align: center;
+      text-shadow: 2px 2px 5px #3e5b5b;
+  }
+  .keyWoldsSearch input{
+    width: 90%;
+    float: left;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 3em;
+    padding: 2%;
+    box-shadow: 2px 2px 5px #3e5b5b;
+    font-weight: bold;
+    color:rgb(241,196,15);
+  }
+  .keyWoldsSearch button{
+    float: right;
+    height: 3em;
+    width: 10%;
+    border: none;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-shadow:0px 0px 13px rgb(200,45,29);
+    box-shadow: 2px 2px 5px #3e5b5b;
+    color:rgb(241,196,15);
+  }
+  .search a{
+    display: block;
+    color: white;
+    width: 20em;
+    font-family: verdana;
+    line-height: 5vw;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px #3e5b5b;
+    margin-top: 3vw;
+  }
+}
