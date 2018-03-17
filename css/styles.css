@@ -81,7 +81,7 @@ a{
     font-size:3vh;
     font-family: verdana;
     color: white;
-    width: 6.5em;
+    padding: 1vh 2vw;
     text-align: center;
     line-height: 2em;
   }
@@ -329,6 +329,161 @@ a{
 	.linksPie li:last-child{
 		margin-bottom: 8vh;
 	}
+	/*-------login---------*/
+	.login{
+		position: absolute;
+		top: 50vh;
+		left: 50vw;
+		transform:translate(-50%,-50%);
+		width: 50vw;
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 2px 2px 5px #3e5b5b;
+		border-radius: 5px;
+		background-color: rgb(241,196,15);
+		font-family: verdana;
+		font-size: 2vh;
+		color: rgb(200,45,29);
+		font-weight: bold;
+	}
+	.login img{
+		height: 10vh;
+	}
+	.login h2{
+		text-align: center;
+		font-weight: bold;
+		margin: 2vh 0 2vh 0;
+	}
+	.formLogin{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.recordarme{
+		display: flex;
+		align-items: center;
+	}
+	.formLogin label{
+		margin:1vh 0 1vh 0;
+	}
+	.login a{
+		display: block;
+		margin-top: 1.5%;
+		text-align: center;
+	}
+	.login button{
+		display: block;
+		color: #580505;
+		background-color: #FFFFC2;
+		border-radius: 7px;
+		border-style: none;
+		box-shadow: 1px 2px 18px #888888;
+	}
+	.navegacion header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.navegacion a{
+		display: block;
+		font-size: 1.5vh;
+	}
+	.navegacion li{
+		float: left;
+    background-color:rgb(241,196,15) ;
+    margin: 0.5vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #3e5b5b;
+
+	}
+	.navegacion ul{
+		clear:both;
+	}
+	/*----registration----*/
+
+		.registration{
+			position: absolute;
+			top: 50vh;
+			left: 50vw;
+			transform:translate(-50%,-50%);
+			width: 65vw;
+			height: 65vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 2px 2px 5px #3e5b5b;
+			border-radius: 5px;
+			background-color: rgb(241,196,15);
+			font-family: verdana;
+			font-size: 2vh;
+			color: rgb(200,45,29);
+			font-weight: bold;
+		}
+		.registration img{
+			height: 10vh;
+		}
+		.registration h2{
+			text-align: center;
+			font-weight: bold;
+			margin: 2vh 0 2vh 0;
+		}
+		.formLogin{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.formLogin label{
+			margin:1vh 0 1vh 0;
+		}
+		.registration button{
+			margin-top: 1vh;
+			display: block;
+			color: #580505;
+			background-color: #FFFFC2;
+			border-radius: 7px;
+			border-style: none;
+			box-shadow: 1px 2px 18px #888888;
+		}
+		/*-----FAQ-----*/
+		.preguntas{
+			position: absolute;
+			top: 18vh;
+			left: 50vw;
+			transform:translate(-50%,0);
+			width: 80vw;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 2px 2px 5px #3e5b5b;
+			border-radius: 5px;
+			background-color: rgb(241,196,15);
+			font-family: verdana;
+			font-size: 1em;
+			color: rgb(200,45,29);
+			padding: 2%;
+		}
+		.preguntas h1{
+			text-align: center;
+			font-weight: bold;
+			font-size: 1.5em;
+			margin-top: 2vh;
+		}
+		.preguntas h2{
+			text-align: center;
+			font-weight:normal;
+			font-style: italic;
+			font-size: 1.3em;
+			margin: 2vh 0 2vh 0;
+		}
+		.preguntas p{
+			margin: 1%;
+		}
 }
 @media (min-width:992px){
 	.casos{
@@ -369,7 +524,42 @@ a{
 	}
 	.linksPie li:last-child{
 		margin-bottom: auto;
-		margin-top: 2.5vw;
+		}
+	.filtro{
+		font-size: 5vh;
 	}
+	/*-------login---------*/
+	.navegacion a{
+		display: block;
+		font-size: 1.8vh;
+	}
+	/*-----FAQ-----*/
+	.preguntas{
+		width: 90vw;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.pregunta{
+		width: 50%;
+		border-style: solid;
+    border-width: 2px;
+		border-color: #ae9b2c;
+		border-radius: 5px;
+		background-color: #FFF9E9
+	}
+	.preguntas p{
+		padding: 2%;
+	}
+	.preguntas h1{
+		margin-bottom: 6vh;
+	}
+}
 
+@media (max-height:480px) {  /*Para acomodar los campos de registro en caso de que el alto sea muy poco*/
+/*----registration----*/
+	.registration{
+		transform:translate(-50%,-40%);
+		height: 75vh;
+	}
 }
